@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<html>
+    <head>
+        <style>
+            button.buttons{
+                
+                margin-right: 1.5em;
+                padding: 0.7em 1.5em;
+                border: none;
+            }
+
+
+        </style>
+     
+    </head>
+    <body>
+        <div id="main-div" class="content-wrapper">
+            <h1 class="select-title">Seleccione su archivo</h1>
+            <label for="file"></label>
+            <input type="file" class="select-video" id="file" name="file" accept="video/*">
+            <output id="video-output"></output>
+            <div id="controls-div" class="controls">
+                <button class="buttons" id="play" style="visibility: hidden;" title="Reproducir" aria-label="Reproducir"> 
+                    <i class="bi bi-play-fill" role="button" aria-label="Reproducir"></i> Play
+                </button>
+                <button class="buttons" id="pause" style="visibility: hidden;" title="Pausa" aria-label="Pausa"> Pausa
+                    <i class="bi bi-pause-fill" role="button" aria-label="Pausar"></i>
+                </button>
+                <button class="buttons" id="up" style="visibility: hidden;" title="Subir volumen" aria-label="Subir volumen"> Subir Volumen
+                    <i class="bi bi-volume-up-fill" role="button" aria-label="Subir volumen"></i>
+                </button>
+                <button class="buttons" id="down" style="visibility: hidden;" title="Bajar volumen" aria-label="Bajar volumen"> Bajar volumen
+                    <i class="bi bi-volume-down-fill" role="button" aria-label="Bajar volumen"></i>
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
